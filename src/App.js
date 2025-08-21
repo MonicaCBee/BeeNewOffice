@@ -381,9 +381,9 @@ export default function OfficeMoveLanding() {
           <div className="position-relative timeline ps-5">
             {[
               
-              { t: "27<sup>th</sup> Morning", d: "Welcome Address By Founder & floor walkthrough." },
-              { t: "27<sup>th</sup> Afternoon", d: "Setup verification, connectivity checks, badge access." },
-              { t: "27<sup>th</sup> Evening", d: "Coffee Connect and Networking" },
+              { t: "27th Morning", d: "Welcome Address By Founder & floor walkthrough." },
+              { t: "27th Afternoon", d: "Setup verification, connectivity checks, badge access." },
+              { t: "27th Evening", d: "Coffee Connect and Networking" },
             ].map((item, i) => (
               <div key={i} className="reveal" style={{ position: "relative", marginLeft: 0, paddingLeft: 32, marginBottom: 18 }}>
                 <div className="dot" style={{ top: 4 }} />
