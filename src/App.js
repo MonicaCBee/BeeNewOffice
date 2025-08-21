@@ -203,7 +203,7 @@ export default function OfficeMoveLanding() {
       <img
         src={require("./assets/Blogo.png")}
         alt="Bee Logo"
-        style={{ height: "200px", width: "200px", objectFit: "contain" }}
+        style={{ height: "170px", width: "170px", objectFit: "contain" }}
       />
       <b>New Office Shift</b>
     </a>
@@ -252,7 +252,7 @@ export default function OfficeMoveLanding() {
                   Save to Calendar
                 </button>
               
-                <a className="btn btn-outline-brand btn-lg px-4" href="#when">
+                <a className="btn btn-outline-brand btn btn-lg px-4" href="#when">
                   Get Directions
                 </a>
               </div>
@@ -359,7 +359,7 @@ export default function OfficeMoveLanding() {
                   start: moveDate,
                   end: endDate,
                 })}>Add to Calendar</button>
-                <a className="btn btn-outline-brand" href="#map">See Map</a>
+                <a className="btn btn-outline-brand" href="https://maps.app.goo.gl/BZPCvE8MNUBkUesLA">See Map</a>
               </div>
             </div>
             <div className="col-lg-6 reveal" id="map">
