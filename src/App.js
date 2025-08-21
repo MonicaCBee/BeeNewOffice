@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FaLinkedin, FaGlobe } from "react-icons/fa"; 
 
 // Company brand
 const BRAND_YELLOW = "#FFDB58"; // company color
@@ -149,7 +150,7 @@ export default function OfficeMoveLanding() {
     weekday: "long", year: "numeric", month: "long", day: "numeric", hour: "2-digit", minute: "2-digit"
   });
 
-  const locationName = "Kosmo One - 6th Floor (Opulence spaces, One Indiabulls Park Tower Tower-B)";
+  const locationName = "Kosmo One - 6th Floor (Opulence spaces, One Indiabulls Park Tower,Tower-B)";
   const capacity = 30;
 
   return (
@@ -192,24 +193,41 @@ export default function OfficeMoveLanding() {
       `}</style>
 
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg sticky-top" style={{ background: "#fff", borderBottom: "1px solid rgba(0,0,0,0.06)" }}>
-        <div className="container py-2">
-          <a className="navbar-brand d-flex align-items-center gap-2" href="#top">
-            <span className="badge badge-brand rounded-pill px-3 py-2">Bee</span>
-            <b>New Office Shift</b>
-          </a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navItems">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item"><a className="nav-link" href="#details">Details</a></li>
-              <li className="nav-item"><a className="nav-link" href="#when">When</a></li>
-              <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      
+          <nav
+  className="navbar navbar-expand-lg sticky-top"
+  style={{ background: "#fff", borderBottom: "1px solid rgba(0,0,0,0.06)" }}
+>
+  <div className="container py-2">
+    <a className="navbar-brand d-flex align-items-center gap-2" href="#top">
+      <img
+        src={require("./assets/Beelogo.png")}
+        alt="Bee Logo"
+        style={{ height: "40px", width: "40px", objectFit: "contain" }}
+      />
+      <b>New Office Shift</b>
+    </a>
+    <button
+      className="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navItems"
+      aria-controls="navItems"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navItems">
+      <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li className="nav-item"><a className="nav-link" href="#details">Details</a></li>
+        <li className="nav-item"><a className="nav-link" href="#when">When</a></li>
+        <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
       {/* Hero */}
       <header ref={heroRef} className="hero" id="top">
@@ -233,7 +251,7 @@ export default function OfficeMoveLanding() {
                 })}>
                   Save to Calendar
                 </button>
-                <a className="btn btn-outline-brand btn-lg px-4" href="https://www.google.com/maps?q=Kosmo+One&output=embed" target="_blank" rel="noreferrer" onClick={() => launchConfetti()}>
+                <a className="btn btn-outline-brand btn-lg px-4" href="https://maps.app.goo.gl/f1ANyRfFHgQbsjgZ7" target="_blank" rel="noreferrer" onClick={() => launchConfetti()}>
                   Get Directions
                 </a>
               </div>
@@ -266,7 +284,7 @@ export default function OfficeMoveLanding() {
                     <div className="col-6">
                       <div className="p-3 bg-light rounded-4 h-100">
                         <div className="small text-muted">Move Date</div>
-                        <div className="h5 m-0 fw-bold">27th</div>
+                        <div className="h5 m-0 fw-bold">27<sup>th</sup></div>
                       </div>
                     </div>
                     <div className="col-12">
@@ -345,7 +363,7 @@ export default function OfficeMoveLanding() {
             </div>
             <div className="col-lg-6 reveal" id="map">
               <div className="ratio ratio-4x3 rounded-4 overflow-hidden border" style={{ boxShadow: "0 10px 30px rgba(0,0,0,0.08)" }}>
-                <iframe title="Kosmo One Map" src="https://maps.app.goo.gl/f1ANyRfFHgQbsjgZ7" allowFullScreen loading="lazy" style={{ border: 0 }} />
+                <iframe title="Kosmo One Map" src="https://www.google.com/maps?q=Kosmo+One&output=embed" allowFullScreen loading="lazy" style={{ border: 0 }} />
               </div>
               <div className="small text-muted mt-2">Map search: "Kosmo One"</div>
             </div>
@@ -358,14 +376,14 @@ export default function OfficeMoveLanding() {
         <div className="container">
           <div className="d-flex align-items-center gap-3 mb-3 reveal">
             <div className="divider"></div>
-            <h2 className="section-title m-0">27th Agenda</h2>
+            <h2 className="section-title m-0">27<sup>th</sup> Agenda</h2>
           </div>
           <div className="position-relative timeline ps-5">
             {[
               
-              { t: "27th Morning", d: "Welcome Address By Founder & floor walkthrough." },
-              { t: "27th Afternoon", d: "Setup verification, connectivity checks, badge access." },
-              { t: "27th Evening", d: "Coffee Connect and Networking" },
+              { t: "27<sup>th</sup> Morning", d: "Welcome Address By Founder & floor walkthrough." },
+              { t: "27<sup>th</sup> Afternoon", d: "Setup verification, connectivity checks, badge access." },
+              { t: "27<sup>th</sup> Evening", d: "Coffee Connect and Networking" },
             ].map((item, i) => (
               <div key={i} className="reveal" style={{ position: "relative", marginLeft: 0, paddingLeft: 32, marginBottom: 18 }}>
                 <div className="dot" style={{ top: 4 }} />
@@ -389,7 +407,7 @@ export default function OfficeMoveLanding() {
               </div>
               <p className="text-muted" style={{maxWidth:"60ch"}}>For any queries, we're here to help.</p>
               <div className="d-flex flex-wrap gap-3">
-                <a className="btn btn-brand" href="mailto:hr@bauratec.com?subject=Office%20Move%20Support">Email HR</a>
+                <a className="btn btn-brand" href="mailto:hr@bauratec.com?subject=Office%20Move%20Support">Email US</a>
                 
               </div>
             </div>
@@ -399,15 +417,40 @@ export default function OfficeMoveLanding() {
       </section>
 
       {/* Footer */}
-      <footer className="footer py-4" style={{ background: BRAND_BLACK, color: BRAND_YELLOW }}>
-        <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-          <div>Copyright © 2025 Bee Aura Tech Corporation, All Rights Reserved.</div>
-          <div className="d-flex gap-3">
-            <a href="#top">Back to top</a>
-            <a href="#when">Event details</a>
-          </div>
-        </div>
-      </footer>
+      <footer
+  className="footer py-4"
+  style={{ background: BRAND_BLACK, color: BRAND_YELLOW }}
+>
+  <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+    <div>
+      Copyright © 2025 Bee Aura Tech Corporation, All Rights Reserved.
+    </div>
+    <div className="d-flex gap-3 align-items-center">
+      <a href="#top" className="text-decoration-none" style={{ color: BRAND_YELLOW }}>
+        Back to top
+      </a>
+      <a href="#when" className="text-decoration-none" style={{ color: BRAND_YELLOW }}>
+        Event details
+      </a>
+      <a
+        href="https://www.linkedin.com/company/bee-aura-tech-corp"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: BRAND_YELLOW, fontSize: "1.2rem" }}
+      >
+        <FaLinkedin />
+      </a>
+      <a
+        href="https://bauratec.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: BRAND_YELLOW, fontSize: "1.2rem" }}
+      >
+        <FaGlobe />
+      </a>
+    </div>
+  </div>
+</footer>
     </div>
   );
 }
