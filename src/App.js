@@ -203,7 +203,7 @@ export default function OfficeMoveLanding() {
       <img
         src={require("./assets/Blogo.png")}
         alt="Bee Logo"
-        style={{ height: "80px", width: "80px", objectFit: "contain" }}
+        style={{ height: "200px", width: "200px", objectFit: "contain" }}
       />
       <b>New Office Shift</b>
     </a>
@@ -251,7 +251,8 @@ export default function OfficeMoveLanding() {
                 })}>
                   Save to Calendar
                 </button>
-                <a className="btn btn-outline-brand btn-lg px-4" href="https://maps.app.goo.gl/f1ANyRfFHgQbsjgZ7" target="_blank" rel="noreferrer" onClick={() => launchConfetti()}>
+              
+                <a className="btn btn-outline-brand btn-lg px-4" href="#when">
                   Get Directions
                 </a>
               </div>
