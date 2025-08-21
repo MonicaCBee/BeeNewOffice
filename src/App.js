@@ -317,13 +317,13 @@ export default function OfficeMoveLanding() {
           <div className="row g-4">
             {[{
               title: "Bigger, Brighter Desks",
-              text: "xyz",
+              text: "",
             }, {
               title: "Seamless Collaboration",
-              text: "xyz.",
+              text: "",
             }, {
               title: "Better Connectivity",
-              text: "xyz",
+              text: "",
             }].map((card, i) => (
               <div key={i} className="col-md-4 reveal">
                 <div className="card rounded-4 p-4 h-100 hover-lift">
