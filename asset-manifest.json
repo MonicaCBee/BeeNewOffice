@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/BeeNewOffice/static/css/main.ad4bbdcc.css",
+    "main.js": "/BeeNewOffice/static/js/main.860193d5.js",
+    "static/js/453.51ccc37b.chunk.js": "/BeeNewOffice/static/js/453.51ccc37b.chunk.js",
+    "index.html": "/BeeNewOffice/index.html",
+    "main.ad4bbdcc.css.map": "/BeeNewOffice/static/css/main.ad4bbdcc.css.map",
+    "main.860193d5.js.map": "/BeeNewOffice/static/js/main.860193d5.js.map",
+    "453.51ccc37b.chunk.js.map": "/BeeNewOffice/static/js/453.51ccc37b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad4bbdcc.css",
+    "static/js/main.860193d5.js"
+  ]
+}
