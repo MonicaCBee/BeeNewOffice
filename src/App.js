@@ -9,9 +9,9 @@ const BRAND_BLACK = "#0a0a0a";
 function getNextMoveDate(now = new Date()) {
   const year = now.getFullYear();
   const month = now.getMonth(); // 0-11
-  const targetThisMonth = new Date(year, month, 27, 10, 0, 0); // 10:00 local
+  const targetThisMonth = new Date(year, month, 27, 10, 45, 0); // 10:00 local
   if (now <= targetThisMonth) return targetThisMonth;
-  return new Date(year, month + 1, 27, 10, 0, 0);
+  return new Date(year, month + 1, 27, 10, 45, 0);
 }
 
 function useCountdown(targetDate) {
@@ -149,7 +149,7 @@ export default function OfficeMoveLanding() {
     weekday: "long", year: "numeric", month: "long", day: "numeric", hour: "2-digit", minute: "2-digit"
   });
 
-  const locationName = "Kosmo One - 5th Floor";
+  const locationName = "Kosmo One - 6th Floor (Opulence spaces, One Indiabulls Park Tower Tower-B)";
   const capacity = 30;
 
   return (
@@ -328,8 +328,8 @@ export default function OfficeMoveLanding() {
                 <h2 className="section-title m-0">When & Where</h2>
               </div>
               <ul className="list-unstyled m-0">
-                <li className="mb-3"><b>Date:</b> 27th (\"Save the Date\")</li>
-                <li className="mb-3"><b>Time:</b> 10:00 AM onwards</li>
+                <li className="mb-3"><b>Date:</b> 27th Aug 2025</li>
+                <li className="mb-3"><b>Time:</b> 10:45 A.M onwards</li>
                 <li className="mb-3"><b>Location:</b> {locationName}</li>
               </ul>
               <div className="mt-3 d-flex gap-3">
@@ -345,7 +345,7 @@ export default function OfficeMoveLanding() {
             </div>
             <div className="col-lg-6 reveal" id="map">
               <div className="ratio ratio-4x3 rounded-4 overflow-hidden border" style={{ boxShadow: "0 10px 30px rgba(0,0,0,0.08)" }}>
-                <iframe title="Kosmo One Map" src="https://www.google.com/maps?q=Kosmo+One&output=embed" allowFullScreen loading="lazy" style={{ border: 0 }} />
+                <iframe title="Kosmo One Map" src="https://maps.app.goo.gl/f1ANyRfFHgQbsjgZ7" allowFullScreen loading="lazy" style={{ border: 0 }} />
               </div>
               <div className="small text-muted mt-2">Map search: "Kosmo One"</div>
             </div>
@@ -358,12 +358,12 @@ export default function OfficeMoveLanding() {
         <div className="container">
           <div className="d-flex align-items-center gap-3 mb-3 reveal">
             <div className="divider"></div>
-            <h2 className="section-title m-0">27 Agenda</h2>
+            <h2 className="section-title m-0">27th Agenda</h2>
           </div>
           <div className="position-relative timeline ps-5">
             {[
               
-              { t: "27th Morning", d: "Welcome Note By Founder & floor walkthrough." },
+              { t: "27th Morning", d: "Welcome Address By Founder & floor walkthrough." },
               { t: "27th Afternoon", d: "Setup verification, connectivity checks, badge access." },
               { t: "27th Evening", d: "Coffee Connect and Networking" },
             ].map((item, i) => (
@@ -389,16 +389,11 @@ export default function OfficeMoveLanding() {
               </div>
               <p className="text-muted" style={{maxWidth:"60ch"}}>For any queries, we're here to help.</p>
               <div className="d-flex flex-wrap gap-3">
-                <a className="btn btn-brand" href="mailto:admin@company.com?subject=Office%20Move%20Support">Email HR</a>
+                <a className="btn btn-brand" href="mailto:hr@bauratec.com?subject=Office%20Move%20Support">Email HR</a>
                 
               </div>
             </div>
-            <div className="col-lg-6 reveal">
-              <div className="card rounded-4 p-4 hover-lift">
-                <h5 className="fw-bold mb-3">Quick Checklist</h5>
-    
-              </div>
-            </div>
+           
           </div>
         </div>
       </section>
@@ -406,7 +401,7 @@ export default function OfficeMoveLanding() {
       {/* Footer */}
       <footer className="footer py-4" style={{ background: BRAND_BLACK, color: BRAND_YELLOW }}>
         <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-          <div>© {new Date().getFullYear()} Company. All rights reserved.</div>
+          <div>Copyright © 2025 Bee Aura Tech Corporation, All Rights Reserved.</div>
           <div className="d-flex gap-3">
             <a href="#top">Back to top</a>
             <a href="#when">Event details</a>
