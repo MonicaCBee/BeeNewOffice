@@ -203,7 +203,7 @@ export default function OfficeMoveLanding() {
       <img
         src={require("./assets/Blogo.png")}
         alt="Bee Logo"
-        style={{ height: "40px", width: "40px", objectFit: "contain" }}
+        style={{ height: "80px", width: "80px", objectFit: "contain" }}
       />
       <b>New Office Shift</b>
     </a>
