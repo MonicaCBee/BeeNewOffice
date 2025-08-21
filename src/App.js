@@ -201,7 +201,7 @@ export default function OfficeMoveLanding() {
   <div className="container py-2">
     <a className="navbar-brand d-flex align-items-center gap-2" href="#top">
       <img
-        src={require("C:/Users/MonicaChandar/Officeshift/officeshiftpage/src/assets/Blogo.png")}
+        src={require("./assets/Blogo.png")}
         alt="Bee Logo"
         style={{ height: "40px", width: "40px", objectFit: "contain" }}
       />
