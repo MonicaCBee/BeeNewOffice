@@ -282,8 +282,8 @@ export default function OfficeMoveLanding() {
   <div 
     className="position-absolute top-0 start-50 translate-middle-x"
     style={{
-      width: "200px",
-      height: "200px",
+      width: "150px",
+      height: "150px",
       background: "radial-gradient(circle, rgba(255,200,0,0.35), transparent 70%)",
       borderRadius: "50%",
       zIndex: 0
