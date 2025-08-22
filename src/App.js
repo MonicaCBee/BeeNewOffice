@@ -205,7 +205,7 @@ export default function OfficeMoveLanding() {
         alt="Bee Logo"
         style={{ height: "140px", width: "140px", objectFit: "contain" }}
       />
-      <b>New Office Shift</b>
+      
     </a>
     <button
       className="navbar-toggler"
@@ -241,22 +241,7 @@ export default function OfficeMoveLanding() {
               <p className="lead text-muted mb-4">
                 A fresh chapter begins! Our {capacity}-seater workspace opens its doors at <b>{locationName}</b> on <b>{moveDateLabel}</b>.
               </p>
-              <div className="d-flex flex-wrap gap-3">
-                <button className="btn btn-brand btn-lg px-4" onClick={() => downloadICS({
-                  title: "Office Move Day – Kosmo One",
-                  description: `We are moving to Kosmo One. ${capacity}-seater office. See you there!`,
-                  location: locationName,
-                  start: moveDate,
-                  end: endDate,
-                })}>
-                  Save to Calendar
-                </button>
               
-                <a className="btn btn-outline-brand btn btn-lg px-4" href="#when">
-                  Get Directions
-                </a>
-              </div>
-
               {/* Countdown */}
               <div className="countdown d-flex gap-4 mt-4">
                 {[{k:"days", v:c.days},{k:"hours", v:c.hours},{k:"minutes", v:c.minutes},{k:"seconds", v:c.seconds}].map(({k,v}) => (
@@ -269,35 +254,57 @@ export default function OfficeMoveLanding() {
             </div>
 
             <div className="col-lg-5">
-              <div className="card p-0 overflow-hidden border-0 hover-lift reveal">
-                <div style={{ background: BRAND_BLACK, color: BRAND_YELLOW }} className="p-4">
-                  <h5 className="mb-1">New Address</h5>
-                  <p className="mb-0 small">{locationName}</p>
-                </div>
-                <div className="p-4">
-                  <div className="row g-3">
-                    <div className="col-6">
-                      <div className="p-3 bg-light rounded-4 h-100">
-                        <div className="small text-muted">Seating</div>
-                        <div className="h4 m-0 fw-bold">{capacity} seats</div>
-                      </div>
-                    </div>
-                    <div className="col-6">
-                      <div className="p-3 bg-light rounded-4 h-100">
-                        <div className="small text-muted">Move Date</div>
-                        <div className="h5 m-0 fw-bold">27<sup>th</sup></div>
-                      </div>
-                    </div>
-                    <div className="col-12">
-                      <div className="p-3 rounded-4 h-100" style={{ background: BRAND_YELLOW }}>
-                        <div className="small" style={{ color: BRAND_BLACK }}>Tip</div>
-                        <div className="m-0" style={{ color: BRAND_BLACK }}>Update your calendars.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div className="card p-0 overflow-hidden border-0 hover-lift reveal">
+    <div style={{ background: BRAND_BLACK, color: BRAND_YELLOW }} className="p-4">
+      <h5 className="mb-1">New Address</h5>
+      <p className="mb-0 small">{locationName}</p>
+    </div>
+    <div className="p-4">
+      <div className="row g-3">
+        <div className="col-12">
+          <div 
+            className="p-5 rounded-4 text-center position-relative overflow-hidden"
+            style={{ 
+              background: "linear-gradient(135deg, #fffbe6, #ffe066, #ffd43b)",
+              boxShadow: "0 0 20px rgba(255, 208, 0, 0.5)"
+            }}
+          >
+            {/* Decorative highlight behind text */}
+            <div 
+              className="position-absolute top-0 start-50 translate-middle-x"
+              style={{
+                width: "120px",
+                height: "120px",
+                background: "radial-gradient(circle, rgba(255,230,0,0.4), transparent 70%)",
+                borderRadius: "50%",
+                zIndex: 0
+              }}
+            ></div>
+
+            <h3 className="fw-bold mb-2 position-relative" style={{ zIndex: 1 }}>
+              Bee Aura
+            </h3>
+            <h5 className="fw-bold text-dark position-relative" style={{ zIndex: 1 }}>
+              First Anniversary
+            </h5>
+            <hr className="mx-auto my-3" style={{ width: "60px", borderTop: "3px solid #000", opacity: 0.8 }} />
+            <p className="m-0 fst-italic position-relative" style={{ zIndex: 1 }}>
+              "A year of buzzing brilliance"
+            </p>
+          </div>
+        </div>
+
+        <div className="col-12">
+          <div className="p-3 rounded-4 h-100" style={{ background: BRAND_YELLOW }}>
+            <div className="small" style={{ color: BRAND_BLACK }}>Tip</div>
+            <div className="m-0" style={{ color: BRAND_BLACK }}>Update your calendars.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
           </div>
         </div>
@@ -372,31 +379,6 @@ export default function OfficeMoveLanding() {
         </div>
       </section>
 
-      {/* Move Timeline */}
-      <section className="py-5">
-        <div className="container">
-          <div className="d-flex align-items-center gap-3 mb-3 reveal">
-            <div className="divider"></div>
-            <h2 className="section-title m-0">27<sup>th</sup> Agenda</h2>
-          </div>
-          <div className="position-relative timeline ps-5">
-            {[
-              
-              { t: "27th Morning", d: "Welcome Address By Founder & floor walkthrough." },
-              { t: "27th Afternoon", d: "Setup verification, connectivity checks, badge access." },
-              { t: "27th Evening", d: "Coffee Connect and Networking" },
-            ].map((item, i) => (
-              <div key={i} className="reveal" style={{ position: "relative", marginLeft: 0, paddingLeft: 32, marginBottom: 18 }}>
-                <div className="dot" style={{ top: 4 }} />
-                <h6 className="fw-bold m-0">{item.t}</h6>
-                <p className="text-muted mb-2">{item.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      
       {/* Contact */}
       <section id="contact" className="py-5">
         <div className="container">
