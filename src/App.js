@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaLinkedin, FaGlobe } from "react-icons/fa"; 
+import './app.css';
 
 // Company brand
 const BRAND_YELLOW = "#FFDB58"; // company color
@@ -234,7 +235,7 @@ export default function OfficeMoveLanding() {
         <div className="container py-5">
           <div className="row align-items-center g-4 py-4">
             <div className="col-lg-7">
-              <span className="badge badge-brand rounded-pill px-3 py-2 mb-3">Announcement</span>
+              <span className="badge badge-brand rounded-pill px-3 py-2 mb-3">Announcement 🎉</span>
               <h1 className="display-4 fw-bold lh-sm mb-3" style={{ color: BRAND_BLACK }}>
                 We're moving to <span style={{ color: BRAND_BLACK, background: BRAND_YELLOW, boxShadow: `0 0 0 10px ${BRAND_YELLOW}` }}>Kosmo One</span>
               </h1>
@@ -269,28 +270,52 @@ export default function OfficeMoveLanding() {
               boxShadow: "0 0 20px rgba(255, 208, 0, 0.5)"
             }}
           >
-            {/* Decorative highlight behind text */}
             <div 
-              className="position-absolute top-0 start-50 translate-middle-x"
-              style={{
-                width: "120px",
-                height: "120px",
-                background: "radial-gradient(circle, rgba(255,230,0,0.4), transparent 70%)",
-                borderRadius: "50%",
-                zIndex: 0
-              }}
-            ></div>
+  className="p-5 rounded-4 text-center position-relative overflow-hidden"
+  style={{ 
+    background: "linear-gradient(135deg, #ffe29f, #fecd2a, #fcb045)", // new golden gradient
+    boxShadow: "0 0 25px rgba(252, 176, 69, 0.4)",
+    color: "#000"
+  }}
+>
+  {/* Decorative highlight behind text */}
+  <div 
+    className="position-absolute top-0 start-50 translate-middle-x"
+    style={{
+      width: "200px",
+      height: "200px",
+      background: "radial-gradient(circle, rgba(255,200,0,0.35), transparent 70%)",
+      borderRadius: "50%",
+      zIndex: 0
+    }}
+  ></div>
 
-            <h3 className="fw-bold mb-2 position-relative" style={{ zIndex: 1 }}>
-              Bee Aura
-            </h3>
-            <h5 className="fw-bold text-dark position-relative" style={{ zIndex: 1 }}>
-              First Anniversary
-            </h5>
-            <hr className="mx-auto my-3" style={{ width: "60px", borderTop: "3px solid #000", opacity: 0.8 }} />
-            <p className="m-0 fst-italic position-relative" style={{ zIndex: 1 }}>
-              "A year of buzzing brilliance"
-            </p>
+  {/* Shimmer Title */}
+  <h3 
+    className="fw-bold mb-2 position-relative shimmer-text" 
+    style={{ zIndex: 1 }}
+  >
+    Bee Aura Tech Corporation
+  </h3>
+
+  <h5 
+    className="fw-bold text-dark position-relative shimmer-text" 
+    style={{ zIndex: 1 }}
+  >
+    First Year Anniversary ✨
+  </h5>
+
+  <hr className="mx-auto my-3" style={{ width: "60px", borderTop: "3px solid #000", opacity: 0.8 }} />
+
+  {/* Glowing Quote */}
+  <p 
+    className="m-0 fst-italic position-relative glow-text" 
+    style={{ zIndex: 1 }}
+  >
+    "One year, endless buzz!"
+  </p>
+</div>
+
           </div>
         </div>
 
