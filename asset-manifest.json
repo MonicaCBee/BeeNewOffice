@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/BeeNewOffice/static/css/main.63067749.css",
-    "main.js": "/BeeNewOffice/static/js/main.9bec94c6.js",
+    "main.js": "/BeeNewOffice/static/js/main.b4170404.js",
     "static/js/453.51ccc37b.chunk.js": "/BeeNewOffice/static/js/453.51ccc37b.chunk.js",
     "static/media/Blogo.png": "/BeeNewOffice/static/media/Blogo.0a2c56742f74736cf090.png",
     "index.html": "/BeeNewOffice/index.html",
     "main.63067749.css.map": "/BeeNewOffice/static/css/main.63067749.css.map",
-    "main.9bec94c6.js.map": "/BeeNewOffice/static/js/main.9bec94c6.js.map",
+    "main.b4170404.js.map": "/BeeNewOffice/static/js/main.b4170404.js.map",
     "453.51ccc37b.chunk.js.map": "/BeeNewOffice/static/js/453.51ccc37b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.63067749.css",
-    "static/js/main.9bec94c6.js"
+    "static/js/main.b4170404.js"
   ]
 }
